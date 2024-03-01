@@ -1,0 +1,42 @@
+﻿<Window x:Class="Calculadora_Area_Perimetro_U1.TriabguloWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculadora_Area_Perimetro_U1"
+        mc:Ignorable="d" Style="{StaticResource ventana}"
+        Title="TriabguloWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Image Grid.Row="1" Source="Triangulo.png"></Image>
+        <TextBlock Style="{StaticResource encabezado}">Triangulo</TextBlock>
+        <Border Margin="10,10,10,0" Background="Azure" Grid.Row="3" BorderBrush="Black" BorderThickness="1" >
+            <StackPanel>
+                <DockPanel Margin="0,5,0,5">
+                    <Label Width="80">Altura:</Label>
+                    <TextBox ></TextBox>
+                </DockPanel>
+                <DockPanel Margin="0,0,0,5">
+                    <Label Width="80">Base:</Label>
+                    <TextBox ></TextBox>
+                </DockPanel>
+
+                <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Margin="10">RESULTADOS</TextBlock>
+                <DockPanel Margin="0,0,0,5">
+                    <Label Width="80">Area:</Label>
+                    <TextBox IsReadOnly="True"></TextBox>
+                </DockPanel>
+                <DockPanel Margin="0,0,0,5">
+                    <Label Width="80">Perimetro:</Label>
+                    <TextBox IsReadOnly="True"></TextBox>
+                </DockPanel>
+
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</Window>

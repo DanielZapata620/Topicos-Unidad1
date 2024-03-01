@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Circulo.png" />
+    <None Remove="Cuadradoo.png" />
+    <None Remove="Rectangulo.png" />
+    <None Remove="Triangulo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Circulo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Cuadradoo.png" />
+    <Resource Include="Rectangulo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Triangulo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Cuadrado.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

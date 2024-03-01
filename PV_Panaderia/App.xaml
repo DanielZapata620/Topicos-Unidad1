@@ -1,0 +1,39 @@
+﻿<Application x:Class="PV_Panaderia.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:PV_Panaderia"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        
+        <Style TargetType="Window" x:Key="WindowStyle">
+            <Setter Property="Background" Value="#8FDEF1" ></Setter>
+            <Setter Property="FontFamily" Value="Verdana"></Setter>
+        </Style>
+        
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="16"></Setter>
+        </Style>
+
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="16"></Setter>
+        </Style>
+
+        <Style TargetType="DataGrid">
+            <Setter Property="FontSize" Value="16"></Setter>
+            <Setter Property="Background" Value="#CDE1E6"></Setter>
+            <Setter Property="BorderBrush" Value="Black"></Setter>
+            <Setter Property="BorderThickness" Value="2"></Setter>
+            
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="16"></Setter>
+        </Style>
+
+        <Style TargetType="Button" >
+            <Setter Property="BorderBrush" Value="Black"></Setter>
+            <Setter Property="BorderThickness" Value="1"></Setter>
+            <Setter Property="FontWeight" Value="SemiBold"></Setter>
+        </Style>
+    </Application.Resources>
+</Application>
